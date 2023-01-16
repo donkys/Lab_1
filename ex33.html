@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>KMITL Porapipat Kaenput</title>
+    <meta name="DESCRIPTION" content="Faculty of Science, Kmitl">
+</head>
+
+<body bgcolor="#FFFFFF" Text="#000000">
+    <H2>Profile</H2>
+    <Form Method="post" ACTION="/cgi/cgishell.exe/cdemo?">
+        <table>
+            <tr>
+                <td>Hidden</td>
+                <td><input type="Hidden" Name="HiddenText" Value="This text is Hidden"></td>
+            </tr>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" Name="FName" size="30" maxlength="30"></td>
+            </tr>
+        </table>
+        <br>
+
+            Hidden <input type="Hidden" Name="HiddenText" Value="This text is Hidden">
+            First Name <input type="text" Name="FName" size="30" maxlength="30">
+            Last Name <input type="text" name="Lname" size="30" maxlength="30">
+            User Name <input type="text" name="Uname" size="10" maxlength="10">
+            Password <input type="password" name="Pswd" size="30" maxlength="30">
+            Address <input type="text" name="Address" size="40" maxlength="60">
+            Status <select name="Status" size="1">
+                <option selected>Single</option>
+                <option >Marry</option>
+            </select>
+            Sex
+                <input type="radio" name="sex" value="M"> Male
+                <input type="radio" name="sex" value="F" checked> Female
+
+            Receipt Desired
+                <input type="checkbox" name="YES"> YES.
+                <input type="checkbox" name="No" > No.      Any Special Instructions? Specify Below: <br>
+                <Textarea name="Instructions" rows="5" cols="60" >Nothing</Textarea>
+
+        <input type="submit" value="Send Me!">
+        <input type="reset" value="Start Over">
+    </Form>
+
+</body>
+
+</html>
